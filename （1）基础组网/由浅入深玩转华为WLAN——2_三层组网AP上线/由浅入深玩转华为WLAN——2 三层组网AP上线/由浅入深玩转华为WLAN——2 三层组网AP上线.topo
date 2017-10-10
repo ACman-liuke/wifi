@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="4F601183-00DB-48bf-A0E6-372D6386A80F" name="AC1" model="AC6005" settings="" com_port="2001" bootmode="0" cx="592.000000" cy="158.000000" edit_left="619" edit_top="212">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+        <dev id="9D0117D5-8C9E-4907-AC2B-AE842E600695" name="AP2" model="AP6010" settings=" -apMac 00-E0-FC-03-C2-20 -apSN 210235448310D479A040" com_port="2003" bootmode="0" cx="269.000000" cy="395.000000" edit_left="296" edit_top="449">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="E283C69A-81AF-4271-8AA7-D137C2D0B5F3" name="AP3" model="AP6010" settings=" -apMac 00-E0-FC-03-E5-00 -apSN 2102354483100C51E43A" com_port="2004" bootmode="0" cx="496.000000" cy="394.000000" edit_left="523" edit_top="448">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="B4FA7182-5665-4856-B548-7B7F4806C645" name="AP4" model="AP6010" settings=" -apMac 00-E0-FC-03-E0-00 -apSN 21023544831012260120" com_port="2005" bootmode="0" cx="673.000000" cy="403.000000" edit_left="700" edit_top="457">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="4640A161-FE71-49f1-A3E4-313C2C06112B" name="AP1" model="AP6010" settings=" -apMac 00-E0-FC-03-14-60 -apSN 2102354483100842F558" com_port="2002" bootmode="0" cx="119.000000" cy="392.000000" edit_left="146" edit_top="446">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="738652A7-BCD0-4767-A5C3-362E9EB990E6" name="LSW1" model="S5700" settings="" com_port="2000" bootmode="0" cx="336.000000" cy="153.000000" edit_left="363" edit_top="207">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="738652A7-BCD0-4767-A5C3-362E9EB990E6" destDeviceID="4640A161-FE71-49f1-A3E4-313C2C06112B">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="333.971436" srcBoundRect_Y="211.971558" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="175.028564" tarBoundRect_Y="387.028442" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="738652A7-BCD0-4767-A5C3-362E9EB990E6" destDeviceID="9D0117D5-8C9E-4907-AC2B-AE842E600695">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="351.477600" srcBoundRect_Y="221.618179" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="307.522400" tarBoundRect_Y="380.381836" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="738652A7-BCD0-4767-A5C3-362E9EB990E6" destDeviceID="E283C69A-81AF-4271-8AA7-D137C2D0B5F3">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="386.885101" srcBoundRect_Y="215.976929" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="499.114899" tarBoundRect_Y="385.023071" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="738652A7-BCD0-4767-A5C3-362E9EB990E6" destDeviceID="B4FA7182-5665-4856-B548-7B7F4806C645">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="397.682373" srcBoundRect_Y="205.728775" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="665.317627" tarBoundRect_Y="404.271240" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="738652A7-BCD0-4767-A5C3-362E9EB990E6" destDeviceID="4F601183-00DB-48bf-A0E6-372D6386A80F">
+            <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="0" srcBoundRect_X="406.175537" srcBoundRect_Y="180.843277" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="575.824463" tarBoundRect_Y="184.156723" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="0" color="16744448" upleftcorner="480,107" width="288" height="150" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="74,303" width="300" height="178" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="0" color="16744448" upleftcorner="476,306" width="300" height="174" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="77" top="306" right="179" bottom="354" content="AP vlan 101&#x0D;&#x0A;10.1.101.0/24&#x0D;&#x0A;gw 201.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="664" top="311" right="766" bottom="359" content="AP vlan 102&#x0D;&#x0A;10.1.102.0/24&#x0D;&#x0A;gw 102.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="641" top="110" right="758" bottom="158" content="AC vlan 800&#x0D;&#x0A;10.1.200.100/24&#x0D;&#x0A;gw 200.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="22" top="32" right="313" bottom="49" content="由浅入深玩转华为WLAN——2 三层组网AP上线" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="96" top="137" right="311" bottom="216" content="核心交换机&#x0D;&#x0A;vlan 101 10.1.101.1/24&#x0D;&#x0A;vlan 102 10.1.102.1/24&#x0D;&#x0A;vlan 800 10.1.200.1/24&#x0D;&#x0A;DHCP Server for vlan 101 102" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

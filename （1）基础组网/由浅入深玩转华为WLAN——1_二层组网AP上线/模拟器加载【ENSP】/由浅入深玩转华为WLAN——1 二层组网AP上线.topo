@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.390">
+    <devices>
+        <dev id="7CCFE465-2E35-418a-AF36-F6E1D25F432B" name="AP3" poe="0" model="AP6010" settings=" -apMac 00-E0-FC-03-B3-10 -apSN 210235448310BE35BA59" system_mac="" com_port="2003" bootmode="0" cx="442.000000" cy="339.000000" edit_left="469" edit_top="393">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="5FC35C07-4037-4606-89FF-E73986DC5481" name="AP2" poe="0" model="AP6010" settings=" -apMac 00-E0-FC-03-DA-40 -apSN 210235448310152A7C4D" system_mac="" com_port="2002" bootmode="0" cx="316.000000" cy="332.000000" edit_left="343" edit_top="386">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="4FDD1168-E885-4359-9BFA-6E7005DD66BA" name="AP4" poe="0" model="AP6010" settings=" -apMac 00-E0-FC-03-DC-50 -apSN 210235448310E6766418" system_mac="" com_port="2004" bootmode="0" cx="555.000000" cy="338.000000" edit_left="582" edit_top="392">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="4B867E32-D666-4352-A72F-FBA0FC501C76" name="AP1" poe="0" model="AP6010" settings=" -apMac 00-E0-FC-03-8E-30 -apSN 2102354483106D748F23" system_mac="" com_port="2001" bootmode="0" cx="187.000000" cy="330.000000" edit_left="214" edit_top="384">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="0D5C7184-C5A3-4eca-90D6-03CAAAC7AA40" name="AC1" poe="0" model="AC6005" settings="" system_mac="00-E0-FC-AA-2D-6D" com_port="2000" bootmode="0" cx="362.000000" cy="121.000000" edit_left="389" edit_top="175">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="0D5C7184-C5A3-4eca-90D6-03CAAAC7AA40" destDeviceID="4B867E32-D666-4352-A72F-FBA0FC501C76">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="361.276581" srcBoundRect_Y="181.109665" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="241.723404" tarBoundRect_Y="323.890320" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="0D5C7184-C5A3-4eca-90D6-03CAAAC7AA40" destDeviceID="5FC35C07-4037-4606-89FF-E73986DC5481">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="379.801575" srcBoundRect_Y="190.192734" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="352.198425" tarBoundRect_Y="316.807251" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="0D5C7184-C5A3-4eca-90D6-03CAAAC7AA40" destDeviceID="7CCFE465-2E35-418a-AF36-F6E1D25F432B">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="403.877136" srcBoundRect_Y="188.540207" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="454.122864" tarBoundRect_Y="325.459808" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="0D5C7184-C5A3-4eca-90D6-03CAAAC7AA40" destDeviceID="4FDD1168-E885-4359-9BFA-6E7005DD66BA">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="417.698975" srcBoundRect_Y="180.267746" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="553.301025" tarBoundRect_Y="332.732269" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="12" top="26" right="303" bottom="43" content="由浅入深玩转华为WLAN——1 二层组网AP上线  " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="179" top="129" right="311" bottom="177" content="管理VLAN 1&#x0D;&#x0A;192.168.100.1、24&#x0D;&#x0A;DHCP SRV" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="168" top="243" right="595" bottom="260" content="         网络之路博客         http://ccieh3c.com        " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

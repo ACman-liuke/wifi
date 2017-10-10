@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="BD2B97FE-1F0E-4da0-8D61-6D1DA6C4968E" name="AP2" model="AP6010" settings=" -apMac 00-E0-FC-03-78-20 -apSN 210235448310F3277942" com_port="2003" bootmode="0" cx="781.000000" cy="490.000000" edit_left="808" edit_top="544">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="9CEC4D7E-5457-4bdb-99DA-00971AC537E0" name="AP1" model="AP6010" settings=" -apMac 00-E0-FC-03-97-30 -apSN 2102354483100A13F850" com_port="2002" bootmode="0" cx="469.000000" cy="485.000000" edit_left="496" edit_top="539">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="11C659A1-C194-4972-9979-34F457C5CDF0" name="CLIENT3" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-CF-A6-2F  -simsta_check 0 " com_port="0" bootmode="0" cx="849.000000" cy="608.000000" edit_left="876" edit_top="662">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="737FD334-4B1D-45ef-AABC-9F0A5D7AB69F" name="CLIENT2" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-CF-52-6A  -simsta_check 0 " com_port="0" bootmode="0" cx="411.000000" cy="600.000000" edit_left="438" edit_top="654">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="18FCF845-8655-4ebe-A89D-8D1E7028DDD7" name="AR1" model="AR1220" settings="" com_port="2000" bootmode="0" cx="613.000000" cy="144.000000" edit_left="640" edit_top="198">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="8C7C0DD7-7D84-436f-AAA8-69DF2370EA13" name="AC1" model="AC6005" settings="" com_port="2001" bootmode="0" cx="613.000000" cy="294.000000" edit_left="640" edit_top="348">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="8C7C0DD7-7D84-436f-AAA8-69DF2370EA13" destDeviceID="9CEC4D7E-5457-4bdb-99DA-00971AC537E0">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="614.003174" srcBoundRect_Y="355.481903" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="521.996826" tarBoundRect_Y="477.518097" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="18FCF845-8655-4ebe-A89D-8D1E7028DDD7" destDeviceID="8C7C0DD7-7D84-436f-AAA8-69DF2370EA13">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="640.000000" srcBoundRect_Y="214.183762" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="640.000000" tarBoundRect_Y="277.816223" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="8C7C0DD7-7D84-436f-AAA8-69DF2370EA13" destDeviceID="BD2B97FE-1F0E-4da0-8D61-6D1DA6C4968E">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="668.103638" srcBoundRect_Y="353.787567" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="779.896362" tarBoundRect_Y="484.212433" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="2" filloption="0" color="33023" upleftcorner="550,136" width="193" height="199" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="280,303" width="417" height="421" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="1" />
+        <shape type="2" filloption="0" color="33023" upleftcorner="594,296" width="436" height="442" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="326" top="109" right="632" bottom="126" content="WLAN配置示例：直连组网+二层组网+直接转发" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="733" top="293" right="994" bottom="357" content="控制器接AR: vlan 200 10.1.200.2/24&#x0D;&#x0A;AP管理:     vlan 100 10.1.100.1/24&#x0D;&#x0A;服务集101： vlan 101 10.1.101.1/24&#x0D;&#x0A;服务集102： vlan 102 10.1.102.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="734" top="146" right="949" bottom="178" content="模拟外网：100.100.100.100/32&#x0D;&#x0A;AR接控制器：10.1.200.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="571" top="215" right="605" bottom="232" content="OSPF " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+    </txttips>
+</topo>

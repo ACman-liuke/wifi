@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.300">
+    <devices>
+        <dev id="A6453261-8DBB-4834-A7C8-F880BDF11F61" name="AR1" model="AR1220" settings="" com_port="2000" bootmode="0" cx="382.000000" cy="84.000000" edit_left="409" edit_top="138">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+            </slot>
+        </dev>
+        <dev id="90428BCF-D7AC-4488-93EE-41FCACFC1462" name="CLIENT3" model="Cellphone" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-CF-0D-45  -simsta_check 0 " com_port="0" bootmode="0" cx="466.000000" cy="556.000000" edit_left="493" edit_top="610">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="7E2774FA-AB9E-440e-B18A-50A65242ED56" name="CLIENT1" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-CF-52-6A  -simsta_check 0 " com_port="0" bootmode="0" cx="141.000000" cy="539.000000" edit_left="168" edit_top="593">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="D85E3E67-A91C-4a23-BA91-1113CEA02677" name="AP1" model="AP6010" settings=" -apMac 00-E0-FC-03-13-60 -apSN 210235448310646DC543" com_port="2003" bootmode="0" cx="265.000000" cy="415.000000" edit_left="292" edit_top="469">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+        <dev id="53368F15-09FC-462a-A966-FED11450B9FB" name="LSW1" model="S5700" settings="" com_port="2001" bootmode="0" cx="380.000000" cy="232.000000" edit_left="407" edit_top="286">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="86E93332-9182-467b-9C2F-8E114F08BD6D" name="AC1" model="AC6005" settings="" com_port="2002" bootmode="0" cx="595.000000" cy="235.000000" edit_left="622" edit_top="289">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="8" />
+            </slot>
+        </dev>
+        <dev id="405DF833-4606-48b7-B1BE-64D154980993" name="CLIENT2" model="STA" settings=" -simsta_ip 0.0.0.0  -simsta_mask 0.0.0.0  -simsta_gateway 0.0.0.0  -simsta_mac 54-89-98-CF-A6-2F  -simsta_check 0 " com_port="0" bootmode="0" cx="650.000000" cy="535.000000" edit_left="677" edit_top="589">
+            <slot number="slot17" isMainBoard="1" />
+        </dev>
+        <dev id="4737F688-B9E1-4161-987D-D45367819E37" name="AP2" model="AP6010" settings=" -apMac 00-E0-FC-03-D7-40 -apSN 2102354483106C6FFC3E" com_port="2004" bootmode="0" cx="584.000000" cy="420.000000" edit_left="611" edit_top="474">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="53368F15-09FC-462a-A966-FED11450B9FB" destDeviceID="D85E3E67-A91C-4a23-BA91-1113CEA02677">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="384.022919" srcBoundRect_Y="295.563538" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="314.977081" tarBoundRect_Y="405.436462" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="53368F15-09FC-462a-A966-FED11450B9FB" destDeviceID="4737F688-B9E1-4161-987D-D45367819E37">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="438.755432" srcBoundRect_Y="288.264832" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="579.244568" tarBoundRect_Y="417.735168" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="53368F15-09FC-462a-A966-FED11450B9FB" destDeviceID="A6453261-8DBB-4834-A7C8-F880BDF11F61">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="407.583496" srcBoundRect_Y="215.820175" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="408.416504" tarBoundRect_Y="154.179825" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="53368F15-09FC-462a-A966-FED11450B9FB" destDeviceID="86E93332-9182-467b-9C2F-8E114F08BD6D">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="450.179565" srcBoundRect_Y="259.602509" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="578.820435" tarBoundRect_Y="261.397491" tarOffset_X="1.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="2" filloption="0" color="33023" upleftcorner="347,218" width="423" height="396" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="1" />
+        <shape type="1" filloption="0" color="16776960" upleftcorner="360,84" width="343" height="201" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="0" color="16744448" upleftcorner="45,230" width="392" height="384" startpt="0,0" endpt="0,0" borderStyle="1" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="18" top="15" right="392" bottom="32" content="WLAN配置示例：旁挂组网+三层组网+隧道转发+三层交换" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="301" top="430" right="418" bottom="447" content="默认 动态发现AC" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="656" top="377" right="1136" bottom="487" content="静态发现AC&#x0D;&#x0A;[Huawei]ap-address mode static&#x0D;&#x0A;[Huawei]ap-address static ip-address 10.1.100.100 24 10.1.100.1&#x0D;&#x0A;[Huawei]ap-address static ac-list 10.1.201.100&#x0D;&#x0A;[Huawei]quit&#x0D;&#x0A;&lt;Huawei&gt;reboot &#x0D;&#x0A;System will reboot! Continue ? [y/n]:y" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="656" top="245" right="947" bottom="277" content="VLAN 800 10.1.201.100/24 （AC管理）&#x0D;&#x0A;vlan 103 192.168.103.1/24 (访客服务集) " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="346" top="346" right="478" bottom="394" content="vlan 100 (AP管理)&#x0D;&#x0A;10.1.100.0/24&#x0D;&#x0A;access vlan 100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="468" top="222" right="578" bottom="254" content="trunk allow &#x0D;&#x0A;100 to 102 800" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="370" top="60" right="555" bottom="77" content="模拟外网 100.100.100.100" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="582" top="135" right="616" bottom="152" content="OSPF" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-8323073" charset="1" />
+        <txttip left="63" top="216" right="339" bottom="311" content="三层交换机上vlan&#x0D;&#x0A;vlan 100 10.1.100.1/24 （AP管理）&#x0D;&#x0A;vlan 101 10.1.101.1/24 （服务集101）&#x0D;&#x0A;vlan 102 10.1.102.1/24 （服务集102）&#x0D;&#x0A;vlan 200 10.1.200.1/24 （接路由器）&#x0D;&#x0A;vlan 800 10.1.201.1/24 （接AC）" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="678" top="290" right="924" bottom="322" content="此实验中访客不能和内网主机通信，&#x0D;&#x0A;只能和100.100.100.100通信" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-65536" txtbkcolor="-256" charset="1" />
+    </txttips>
+</topo>
